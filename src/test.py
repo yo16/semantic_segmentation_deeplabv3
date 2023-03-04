@@ -1,14 +1,9 @@
 
 import os
-#import torch
-#from torchvision import transforms
 from mmseg.apis import inference_segmentor, init_segmentor, show_result_pyplot
 from mmseg.core.evaluation import get_palette
 from mim.commands.download import download
 from mmcv.cnn.utils.sync_bn import revert_sync_batchnorm
-#import numpy as np
-#from PIL import Image
-#import matplotlib.pyplot as plt
 
 def main():
     img_path = './photos/IMG_0004_512x512.JPG'
